@@ -9,4 +9,4 @@ spec:
     - port : 80     # service
       targetPort: 5000 #container
       nodePort: 30000 #cluster
-  type: NodePort
+  type: LoadBalancer
