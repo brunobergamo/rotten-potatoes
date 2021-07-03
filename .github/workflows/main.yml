@@ -51,14 +51,4 @@ jobs:
         uses: Azure/k8s-set-context@v1.1
         with:
           method: ${{secrets.K8S_CONFIG}}
-          password: ${{ secrets.DOCKERHUB_PWD }}
-      - name: Build and push Docker images
-        uses: docker/build-push-action@v2.6.1
-        with:
-          context: ./src
-          file: ./src/Dockerfile
-          push: true
-          tags: |
-            brunobergamo/rotten-potatoes:latest
-            brunobergamo/rotten-potatoes:v${{ github.run_number }}
          
