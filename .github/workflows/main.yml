@@ -37,5 +37,5 @@ jobs:
           push: true
           tags: |
             brunobergamo/rotten-potatoes:latest
-            brunobergamo/rotten-potatoes:${{ github.run_number }}
+            brunobergamo/rotten-potatoes:v${{ github.run_number }}
          
